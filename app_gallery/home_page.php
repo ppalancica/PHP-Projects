@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
+  include("functions.php");
+  include("header.php");
+?>
     <?php $page_name = "Contact Page"; ?>
     <?php $id = 1; ?>
     <?php $company_name = "Palancica & Co"; ?>
@@ -21,6 +18,10 @@
     <a href="">
       <?php echo htmlspecialchars($link_text); ?>
     </a>
+
+    <?php
+      echo full_name("Pavel", "Palancica");
+    ?>
 
   </body>
 </html>
